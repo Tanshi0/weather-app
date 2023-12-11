@@ -69,12 +69,14 @@ function App() {
 
       {
         weather.data &&
+       
         <Carousel {...sliderStyle}>
           {
             weather.data.daily.time.map((item, index) => (
               <Carousel.Slide key={index}>
 
-                <p style={{color: "#bcd1e8", fontSize: "10px",display: "flex", justifyContent: "center" ,padding: "10px"}}>{item}</p>
+                <p style={{color: "#bcd1e8", fontSize: "10px",display: "flex", justifyContent: "center" ,padding: "10px"}}>{item},
+                Сегодня</p>
                {index === 1 &&(
                 <>
                 
